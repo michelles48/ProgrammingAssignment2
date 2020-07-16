@@ -1,8 +1,8 @@
 ## Put comments here that give an overall description of what your
 ## functions do
-
+Operation of functions that collects the inverse of a matrix
 ## Write a short comment describing this function
-
+The function produces a matrix article that can store its inverse
 makeCacheMatrix <- function(x = matrix()) {
   inv<-NULL
   set<-function(y){
@@ -15,6 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set = set, get = get, setInverse=setInverse,getInverse=getInverse)
 }
 ## Write a short comment describing this function
+The function assesses the inverse of the matrix remitted by makecashematrix
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   inv<- x$getInverse()
